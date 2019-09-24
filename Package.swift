@@ -20,10 +20,10 @@ let package = Package(
         // Targets can depend on other targets in this package, and on products in packages which this package depends on.
         .target(
             name: "H3",
-            path: ./h3),
+            path: "./h3"),
         .target(
             name: "H3Swift",
-            path: ./H3Swift),
+            path: "./H3Swift"),
         .testTarget(
             name: "h3-ios-frameworkTests",
             dependencies: ["h3-ios-framework"]),
