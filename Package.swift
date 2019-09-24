@@ -9,7 +9,7 @@ let package = Package(
         // Products define the executables and libraries produced by a package, and make them visible to other packages.
         .library(
             name: "h3-ios-framework",
-            targets: ["H3", "H3Swift"]),
+            targets: ["H3"]),
     ],
     dependencies: [
         // Dependencies declare other packages that this package depends on.
@@ -20,10 +20,7 @@ let package = Package(
         // Targets can depend on other targets in this package, and on products in packages which this package depends on.
         .target(
             name: "H3",
-            path: "./h3"),
-        .target(
-            name: "H3Swift",
-            path: "./H3Swift"),
+            path: "./build/Release-iphoneos/H3.framework"),
         .testTarget(
             name: "h3-ios-frameworkTests",
             dependencies: ["h3-ios-framework"]),
