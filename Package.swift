@@ -20,7 +20,7 @@ let package = Package(
         // Targets can depend on other targets in this package, and on products in packages which this package depends on.
         .target(
             name: "H3",
-            path: "./build/Release-iphoneos/H3.framework"),
+            path: "./h3"),
         .testTarget(
             name: "h3-ios-frameworkTests",
             dependencies: ["h3-ios-framework"]),
